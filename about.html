@@ -5,12 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recipe Magic | Cooking made simple</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-        <h1>Healthy Bites</h1>
-    </header>
+      <h1>About Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Sweets.html">Dessert Recipes</a></li>
+          <li><a href="healthybites.html">Healthy Recipes</a></li>
+          <li><a href="quickrecipes.html">Quick & Easy Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+  </header>
+    <section id="about">
+        <h2>Our Story</h2>
+        <p>Welcome to Recipe Magic, your go-to source for delicious and healthy recipes! We are passionate about making cooking simple and enjoyable.</p>
+
+        <h2>Our Mission</h2>
+        <p>At Recipe Magic, our mission is to transform your kitchen into a place of culinary delight. We're dedicated to empowering individuals and families to discover the joy of cooking by providing an array of delightful, healthy, and easy-to-follow recipes. We believe that cooking is not just a necessity but a creative and rewarding journey, and we're here to make that journey both accessible and enjoyable. Join us in our quest to make every meal a magical experience filled with fresh ingredients and endless possibilities."</p>
+
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="images/team-member1.jpg" alt="Jackson Brinn">
+            <h3>Jackson Brinn</h3>
+            <p>Founder</p>
+            <p>Jackson is an inexperienced cook, who cooks for himself and his girlfriend on occasion. He doesn't have enough time to master the art of cooking, instead he's mastering the art of website development. However, he still wants a simple place to store recipes he likes that he finds around the internet that are easy-to-follow and tasty. Thus bring him the urge to create this website for his portfolio and create something meaningful to his life.</p>
+        </div>
+        <h2>Have a suggestion? Contact Us!</h2>
+        <form>
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user_email" required>
+            </div>
+
+            <div class="form">
+                <label for="reason"> Reason for contact</label>
+                <select id="reason" name="reason">
+                    <option value="saying_hi">Saying Hi</option>
+                    <option value="looking_for_contractor">Looking for a Contractor</option>
+                    <option value="interested_in_interview"> Interested in an Interview</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="comment">Comments</label>
+                <textarea id="comment" name="user_comment"></textarea>
+            </div>
+
+            <div class="form">
+                <button>Submit</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Recipe Magic</p>
+    </footer>
+</body>
+</html>
     <script src="index.js"></script>
   </body>
 </html>
