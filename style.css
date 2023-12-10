@@ -5,10 +5,11 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #c49b9b;
+    color: #ffffff;
+    padding: 50px 20px;
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -40,6 +41,7 @@ a {
 a:hover {
     border-bottom: 2px solid #fff;
 }
+
 
 
 section#blog {
@@ -139,13 +141,13 @@ i {
 section#about {
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: #d6d1d1;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .team-member {
-    background-color: #e9e9e9;
+    background-color: #c49b9b;
     padding: 10px;
     margin-top: 20px;
     border-radius: 4px;
@@ -158,7 +160,7 @@ section#about {
   }
   
   footer {
-    background-color: #333;
+    background-color: #c49b9b;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -221,3 +223,84 @@ form h2 {
 .form button:hover {
     background-color: #555;
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .image-and-text {
+      flex-direction: column;
+    }
+  
+    .image-and-text img {
+      flex-basis: 100%;
+    }
+
+
+    nav ul {
+    flex-direction: column;
+    text-align: center;
+    }
+
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    #blog {
+      width: 95%;
+    }
+  }
+  
+
+header .logo-image {
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    max-width: 20%;
+}
+
+header .logo-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Section Styles */
+section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+  }
+  
+  section p {
+    margin-bottom: 20px;
+  }
+  
+  /* Team Member Styles */
+  .team-member {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .team-member h3 {
+    color: #333;
+    margin-top: 10px;
+  }
+  
